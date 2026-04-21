@@ -1,220 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Think9 Entrepreneurs Fund</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Think9 Founders Fund — India's Consumer Brand Venture Fund</title>
+<meta name="description" content="Think9 Founders Fund is India's most distinctive consumer-brand venture fund (SEBI Cat II AIF). Backing the next generation of founders building iconic consumer brands."/>
+<meta name="keywords" content="Think9, Founders Fund, venture capital, India, consumer brands, D2C, SEBI AIF, early stage, seed fund, brand investing"/>
+<meta name="author" content="Think9 Founders Fund"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://think9co.in/"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Think9 Founders Fund"/>
+<meta property="og:title" content="Think9 Founders Fund — India's Consumer Brand Venture Fund"/>
+<meta property="og:description" content="India's most distinctive consumer-brand fund — backing iconic founders at the intersection of a rising consuming class, digital infrastructure, and unprecedented branded consumption growth."/>
+<meta property="og:url" content="https://think9co.in/"/>
+<meta property="og:locale" content="en_IN"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Think9 Founders Fund — India's Consumer Brand Venture Fund"/>
+<meta name="twitter:description" content="India's most distinctive consumer-brand fund — backing iconic founders building the next generation of consumer brands."/>
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Think9 Founders Fund",
+  "alternateName": "Think9",
+  "url": "https://think9co.in",
+  "description": "India's most distinctive consumer-brand venture fund (SEBI Cat II AIF), backing the next generation of founders building iconic consumer brands.",
+  "foundingDate": "2024",
+  "areaServed": "India",
+  "sameAs": [],
+  "@type": ["Organization", "InvestmentFund"],
+  "knowsAbout": ["Consumer Brands", "Direct-to-Consumer", "Venture Capital", "Early Stage Investing", "Indian Consumer Market", "Brand Building", "D2C Ecosystem"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Think9 Founders Fund?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Think9 Founders Fund is a SEBI-registered Category II AIF focused on early-stage consumer brand investments in India. The fund backs founders building iconic brands across food, beauty, fashion, wellness, and lifestyle categories."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What stage does Think9 Founders Fund invest at?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Think9 invests at the pre-seed and seed stage, typically being one of the first institutional investors in consumer brand startups across India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sectors does Think9 focus on?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Think9 focuses on consumer brands across food & beverage, beauty & personal care, fashion & apparel, health & wellness, home & lifestyle, and pet care — sectors driven by India's rising consuming class and digital infrastructure."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
-:root{--teal:#00bfb3;--teal-dim:#0d8f8a;--teal-glow:rgba(0,191,179,.12);--bg:#07090d;--bg2:#0c0f16;--bg3:#111520;--text:#e8e8e4;--muted:#7a7f8e;--border:rgba(255,255,255,.07);--nav-h:64px;--px:clamp(20px,5vw,60px);}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;overflow-x:hidden;}
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 var(--px);background:rgba(7,9,13,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
-.nav-logo{display:flex;align-items:center;gap:8px;cursor:pointer;flex-shrink:0;}
-.nav-logo svg{width:30px;height:30px;}
-.logo-text{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--text);}
-.logo-text span{color:var(--teal);}
-.nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
-.nav-links a{text-decoration:none;color:var(--muted);font-size:12px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;transition:color .2s;cursor:pointer;}
-.nav-links a:hover,.nav-links a.active{color:var(--teal);}
-.nav-cta{padding:8px 18px;border:1px solid var(--teal);color:var(--teal)!important;border-radius:2px;transition:background .2s,color .2s!important;}
-.nav-cta:hover{background:var(--teal)!important;color:var(--bg)!important;}
-.nav-dropdown{position:relative;}
-.nav-dropdown>a::after{content:'';display:inline-block;width:0;height:0;margin-left:5px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:4px solid currentColor;vertical-align:middle;}
-.dropdown-menu{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);min-width:220px;padding:8px 0;margin-top:12px;background:rgba(12,15,22,0.97);backdrop-filter:blur(16px);border:1px solid var(--border);z-index:100;}
-.dropdown-menu a{display:block;padding:10px 20px;font-size:11px!important;letter-spacing:0.06em!important;text-transform:none!important;color:var(--muted)!important;transition:all 0.2s;}
-.dropdown-menu a:hover{color:var(--teal)!important;background:rgba(0,191,179,0.12);}
-.nav-dropdown:hover .dropdown-menu{display:block;}
-.mobile-menu .m-sub{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:300;padding:12px 0 12px 20px;border-bottom:1px solid var(--border);}
-.hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;cursor:pointer;background:none;border:none;padding:4px;}
-.hamburger span{display:block;width:22px;height:1.5px;background:var(--text);transition:all .3s;}
-.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(4px,4px);}
-.hamburger.open span:nth-child(2){opacity:0;}
-.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px);}
-.mobile-menu{display:none;position:fixed;top:var(--nav-h);left:0;right:0;bottom:0;background:rgba(7,9,13,.98);backdrop-filter:blur(20px);z-index:999;flex-direction:column;padding:32px var(--px);overflow-y:auto;}
-.mobile-menu.open{display:flex;}
-.mobile-menu a{display:block;padding:18px 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--text);font-family:'Cormorant Garamond',serif;font-size:clamp(24px,6vw,32px);font-weight:300;cursor:pointer;transition:color .2s;}
-.mobile-menu a:hover{color:var(--teal);}
-.mobile-menu .m-cta{margin-top:28px;padding:16px 0;text-align:center;border:1px solid var(--teal)!important;color:var(--teal)!important;font-family:'DM Sans',sans-serif!important;font-size:13px!important;letter-spacing:.08em;text-transform:uppercase;}
-.page{display:none;padding-top:var(--nav-h);}
-.page.active{display:block;animation:fadeUp .5s ease forwards;}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
-.section-tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
-.section-tag::before{content:'';width:20px;height:1px;background:var(--teal);}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,5vw,52px);font-weight:300;line-height:1.1;letter-spacing:-.01em;}
-.section-title em{font-style:italic;color:var(--teal);}
-.teal{color:var(--teal);}.muted{color:var(--muted);}
-.section{padding:clamp(48px,8vw,100px) var(--px);}
-.section-sm{padding:clamp(32px,5vw,64px) var(--px);}
-.section-header{margin-bottom:clamp(32px,5vw,60px);}
-.divider{height:1px;background:var(--border);}
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);}
-.card{background:var(--bg);padding:clamp(24px,4vw,48px) clamp(20px,3vw,40px);position:relative;overflow:hidden;transition:background .3s;}
-.card:hover{background:#111520;}
-.card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),transparent);transform:scaleX(0);transform-origin:left;transition:transform .4s;}
-.card:hover::before{transform:scaleX(1);}
-.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(32px,5vw,80px);align-items:start;}
-.hero{min-height:calc(100vh - var(--nav-h) - 160px);display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:clamp(48px,8vw,100px) var(--px) clamp(24px,3vw,40px);position:relative;overflow:hidden;gap:40px;}
-.hero-image{position:relative;z-index:1;width:100%;aspect-ratio:4/3;border:2px dashed var(--border);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;background:rgba(0,191,179,.03);border-radius:4px;transition:border-color .3s;}
-.hero-image:hover{border-color:var(--teal-dim);}
-.hero-image svg{opacity:.3;}
-.hero-image span{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
-.hero-bg{position:absolute;inset:0;z-index:0;background:radial-gradient(ellipse 80% 60% at 65% 50%,rgba(0,191,179,.05) 0%,transparent 70%),radial-gradient(ellipse 50% 40% at 15% 80%,rgba(0,143,138,.07) 0%,transparent 60%);}
-.hero-grid{position:absolute;inset:0;z-index:0;opacity:.025;background-image:linear-gradient(var(--teal) 1px,transparent 1px),linear-gradient(90deg,var(--teal) 1px,transparent 1px);background-size:60px 60px;}
-.hero-content{position:relative;z-index:1;max-width:820px;}
-.hero-eyebrow{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.18em;color:var(--teal);text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:10px;}
-.hero-eyebrow::before{content:'';width:28px;height:1px;background:var(--teal);}
-.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,8vw,96px);font-weight:300;line-height:1.05;letter-spacing:-.02em;margin-bottom:24px;}
-.hero-title em{font-style:italic;color:var(--teal);}
-.hero-sub{font-size:clamp(14px,2vw,16px);color:var(--muted);line-height:1.75;max-width:560px;margin-bottom:40px;}
-.hero-actions{display:flex;flex-wrap:wrap;gap:12px;}
-.btn-primary{padding:13px clamp(20px,3vw,32px);background:var(--teal);color:var(--bg);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;border:none;cursor:pointer;border-radius:2px;transition:background .2s;white-space:nowrap;}
-.btn-primary:hover{background:#00d4c8;}
-.btn-ghost-s{padding:12px clamp(20px,3vw,32px);border:1px solid var(--border);color:var(--text);font-size:12px;letter-spacing:.08em;text-transform:uppercase;background:transparent;cursor:pointer;border-radius:2px;transition:border-color .2s,color .2s;white-space:nowrap;}
-.btn-ghost-s:hover{border-color:var(--teal);color:var(--teal);}
-.stats-strip{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--border);}
-.stat-cell{padding:clamp(20px,4vw,40px) clamp(16px,3vw,32px);border-right:1px solid var(--border);border-bottom:1px solid var(--border);transition:background .3s;}
-.stat-cell:hover{background:var(--teal-glow);}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,5vw,48px);font-weight:300;color:var(--teal);line-height:1;margin-bottom:6px;}
-.stat-label{font-size:11px;font-weight:400;letter-spacing:.07em;color:var(--muted);text-transform:uppercase;}
-.macro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);margin-top:40px;}
-.macro-cell{background:#0c0f16;padding:clamp(24px,4vw,48px);display:flex;gap:20px;align-items:flex-start;}
-.macro-icon{width:44px;height:44px;flex-shrink:0;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--teal);}
-.macro-big{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,40px);font-weight:300;color:var(--teal);line-height:1;margin-bottom:4px;}
-.macro-head{font-size:13px;color:var(--text);margin-bottom:8px;}.macro-desc{font-size:13px;color:var(--muted);line-height:1.65;}
-.exit-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);}
-.exit-col{background:#0c0f16;padding:clamp(24px,4vw,40px);}
-.exit-col-tag{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);font-family:'DM Mono',monospace;margin-bottom:20px;}
-.exit-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--border);font-size:13px;}
-.exit-row:last-child{border-bottom:none;}
-.exit-multiple{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--teal);font-weight:400;}
-.opp-num{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;line-height:1;color:var(--teal);opacity:.18;margin-bottom:18px;}
-.card-title{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2.5vw,22px);font-weight:400;margin-bottom:12px;}
-.card-desc{font-size:13px;color:var(--muted);line-height:1.75;}
-.about-text p{font-size:14px;color:var(--muted);line-height:1.8;margin-bottom:18px;}
-.about-text p strong{color:var(--text);font-weight:400;}
-.about-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,3vw,26px);font-style:italic;line-height:1.5;color:var(--teal);padding-left:20px;border-left:2px solid var(--teal);}
-.about-stats{display:flex;flex-direction:column;gap:10px;margin-top:28px;}
-.about-stat-row{display:flex;align-items:center;gap:16px;padding:16px 18px;border:1px solid var(--border);}
-.about-stat-num{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:var(--teal);flex-shrink:0;}
-.about-stat-label{font-size:13px;color:var(--muted);}
-.research-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);margin-top:28px;}
-.research-cell{background:#0c0f16;padding:clamp(18px,3vw,24px) clamp(16px,2vw,20px);}
-.research-tag{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-family:'DM Mono',monospace;margin-bottom:8px;}
-.research-name{font-family:'Cormorant Garamond',serif;font-size:15px;margin-bottom:4px;}
-.research-sub{font-size:11px;color:var(--muted);line-height:1.5;}
-.density-bars{margin-top:36px;display:flex;flex-direction:column;gap:12px;}
-.density-row{display:flex;align-items:center;gap:14px;}
-.density-label{width:48px;font-size:12px;color:var(--muted);text-align:right;flex-shrink:0;}
-.density-bar-wrap{flex:1;height:32px;background:rgba(255,255,255,.04);overflow:hidden;}
-.density-bar{height:100%;background:linear-gradient(90deg,#0d8f8a,var(--teal));display:flex;align-items:center;padding-left:10px;font-size:12px;font-weight:500;color:var(--bg);white-space:nowrap;}
-.port-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);}
-.port-card{background:var(--bg);padding:clamp(32px,5vw,56px) clamp(24px,4vw,40px);position:relative;overflow:hidden;transition:background .4s;display:flex;flex-direction:column;align-items:center;text-align:center;}
-.port-card:hover{background:var(--bg3);}
-.port-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),transparent);transform:scaleX(0);transform-origin:left;transition:transform .4s;}
-.port-card:hover::before{transform:scaleX(1);}
-.port-logo{width:160px;height:80px;margin-bottom:24px;border:1.5px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;background:rgba(0,191,179,.02);overflow:hidden;transition:border-color .3s;}
-.port-card:hover .port-logo{border-color:var(--teal-dim);}
-.port-logo img{max-height:64px;max-width:90%;object-fit:contain;}
-.port-logo span{font-size:10px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;}
-.port-brand{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,28px);font-weight:600;margin-bottom:6px;}
-.port-cat{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:20px;font-family:'DM Mono',monospace;}
-.port-metric{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;}
-.port-num{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,5vw,40px);font-weight:300;color:var(--teal);line-height:1;}
-.port-num-label{font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;}
-.port-desc{font-size:13px;color:var(--muted);line-height:1.75;margin-top:16px;max-height:0;overflow:hidden;opacity:0;transition:max-height .4s ease,opacity .3s ease,margin-top .3s ease;}
-.port-card:hover .port-desc{max-height:200px;opacity:1;}
-.port-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px;justify-content:center;}
-.port-tag{padding:4px 10px;border:1px solid var(--border);font-size:10px;color:var(--muted);letter-spacing:.06em;transition:border-color .3s;}
-.port-card:hover .port-tag{border-color:rgba(0,191,179,.25);}
-.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
-.exit-table{width:100%;min-width:480px;border-collapse:collapse;margin-top:28px;}
-.exit-table th{text-align:left;padding:12px 14px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:400;font-family:'DM Mono',monospace;border-bottom:1px solid var(--border);}
-.exit-table td{padding:16px 14px;font-size:13px;color:var(--text);border-bottom:1px solid var(--border);vertical-align:middle;}
-.exit-table tr:hover td{background:rgba(0,191,179,.12);}
-.params-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);margin-top:36px;}
-.param-row{background:var(--bg);padding:20px clamp(18px,3vw,40px);display:flex;justify-content:space-between;align-items:center;gap:16px;transition:background .3s;}
-.param-row:hover{background:#111520;}
-.param-key{font-size:13px;color:var(--muted);}
-.param-val{font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--text);text-align:right;}
-.eco-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);}
-.eco-spoke{background:var(--bg2);padding:clamp(20px,3vw,32px);transition:background .3s;}
-.eco-spoke:hover{background:var(--bg3);}
-.eco-icon{color:var(--teal);margin-bottom:12px;}
-.eco-title{font-family:'Cormorant Garamond',serif;font-size:17px;margin-bottom:8px;}
-.eco-desc{font-size:12px;color:var(--muted);line-height:1.65;}
-.backer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);}
-.backer-card{background:var(--bg2);padding:clamp(24px,4vw,40px);text-align:center;transition:background .3s;}
-.backer-card:hover{background:var(--bg3);}
-.backer-img{width:72px;height:72px;border-radius:50%;margin:0 auto 16px;border:2px dashed var(--border);display:flex;align-items:center;justify-content:center;background:rgba(0,191,179,.03);overflow:hidden;}
-.backer-img img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
-.backer-name{font-family:'Cormorant Garamond',serif;font-size:18px;margin-bottom:4px;}
-.backer-title{font-size:11px;color:var(--muted);line-height:1.5;}
-.team-ava{width:80px;height:80px;border-radius:50%;border:2px dashed var(--border);margin-bottom:18px;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--teal);background:rgba(0,191,179,.03);overflow:hidden;}
-.team-ava img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
-.team-name{font-family:'Cormorant Garamond',serif;font-size:clamp(20px,3vw,24px);margin-bottom:4px;}
-.team-name a{color:var(--text);text-decoration:none;transition:color .2s;}
-.team-name a:hover{color:var(--teal);}
-.team-role{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:18px;font-family:'DM Mono',monospace;}
-.team-bio{font-size:13px;color:var(--muted);line-height:1.75;}
-.team-badge{display:inline-block;margin-top:16px;padding:4px 10px;border:1px solid var(--border);font-size:11px;color:var(--muted);}
-.team-linkedin{display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:11px;color:var(--teal);text-decoration:none;letter-spacing:.04em;transition:opacity .2s;}
-.team-linkedin:hover{opacity:.8;}
-.advisor-card{background:var(--bg2);padding:clamp(22px,4vw,40px);display:flex;gap:20px;align-items:flex-start;transition:background .3s;}
-.advisor-card:hover{background:var(--bg3);}
-.advisor-ava{width:64px;height:64px;border-radius:50%;flex-shrink:0;border:2px dashed var(--border);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--teal);background:rgba(0,191,179,.03);overflow:hidden;}
-.advisor-ava img{width:100%;height:100%;object-fit:cover;border-radius:50%;}
-.advisor-name{font-family:'Cormorant Garamond',serif;font-size:20px;margin-bottom:4px;}
-.advisor-name a{color:var(--text);text-decoration:none;transition:color .2s;}
-.advisor-name a:hover{color:var(--teal);}
-.advisor-role{font-size:10px;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;font-family:'DM Mono',monospace;margin-bottom:10px;}
-.advisor-bio{font-size:13px;color:var(--muted);line-height:1.7;}
-.gov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:1px;background:var(--border);border:1px solid var(--border);margin-top:32px;}
-.gov-cell{background:var(--bg2);padding:clamp(18px,3vw,28px);text-align:center;}
-.gov-tag{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-family:'DM Mono',monospace;margin-bottom:8px;}
-.gov-logo{width:100%;height:40px;margin-bottom:8px;display:flex;align-items:center;justify-content:center;border:1px dashed var(--border);border-radius:2px;background:rgba(0,191,179,.02);overflow:hidden;}
-.gov-logo img{max-height:32px;max-width:80%;object-fit:contain;}
-.gov-logo span{font-size:9px;color:var(--muted);}
-.gov-name{font-family:'Cormorant Garamond',serif;font-size:17px;margin-bottom:4px;}
-.gov-sub{font-size:11px;color:var(--muted);}
-.thesis-meta{display:flex;flex-direction:column;gap:1px;background:var(--border);border:1px solid var(--border);}
-.thesis-meta-row{background:#0c0f16;padding:clamp(16px,3vw,24px) clamp(18px,3vw,28px);}
-.thesis-meta-tag{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);font-family:'DM Mono',monospace;margin-bottom:6px;}
-.thesis-meta-val{font-family:'Cormorant Garamond',serif;font-size:17px;}
-.pillar-num{font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:300;line-height:1;color:var(--teal);opacity:.12;margin-bottom:12px;}
-.pillar-title{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2.5vw,22px);margin-bottom:12px;}
-.pillar-desc{font-size:13px;color:var(--muted);line-height:1.75;}
-.playbook-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px;padding:0 var(--px) clamp(48px,8vw,80px);}
-.play-card{padding:clamp(22px,3vw,32px) clamp(18px,3vw,28px);border:1px solid var(--border);transition:border-color .3s,background .3s;}
-.play-card:hover{border-color:var(--teal);background:rgba(0,191,179,.12);}
-.play-brand{font-family:'Cormorant Garamond',serif;font-size:19px;margin-bottom:6px;}
-.play-channel{font-size:10px;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;font-family:'DM Mono',monospace;margin-bottom:12px;}
-.play-desc{font-size:13px;color:var(--muted);line-height:1.7;}
-footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:clamp(28px,4vw,60px);background:#0c0f16;}
-.footer-brand p{font-size:13px;color:var(--muted);line-height:1.7;margin-top:12px;}
-.footer-col h4{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--teal);margin-bottom:14px;font-family:'DM Mono',monospace;}
-.footer-col ul{list-style:none;}
-.footer-col ul li{margin-bottom:10px;}
-.footer-col ul li a{font-size:13px;color:var(--muted);text-decoration:none;transition:color .2s;cursor:pointer;}
-.footer-col ul li a:hover{color:var(--teal);}
-.social-icons{display:flex;gap:12px;margin-top:16px;}
-.social-icons a{display:flex;align-items:center;justify-content:center;width:36px;height:36px;border:1px solid var(--border);border-radius:2px;color:var(--muted);transition:all .2s;}
-.social-icons a:hover{border-color:var(--teal);color:var(--teal);background:rgba(0,191,179,.12);}
-.social-icons a svg{width:16px;height:16px;}
-.footer-bottom{padding:16px var(--px);border-top:1px solid var(--border);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;background:#0c0f16;}
-.footer-bottom p{font-size:11px;color:var(--muted);font-family:'DM Mono',monospace;}
-::-webkit-scrollbar{width:5px;height:5px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:var(--border);}
-@media(min-width:641px){.hamburger{display:none;}.mobile-menu{display:none!important;}.stats-strip{grid-template-columns:repeat(4,1fr);}.stat-cell:nth-child(even){border-right:1px solid var(--border);}}
-@media(max-width:640px){.nav-links{display:none;}.hamburger{display:flex;}.hero{grid-template-columns:1fr;}.hero-image{display:none;}.stat-cell:nth-child(odd){border-right:1px solid var(--border);}.stat-cell:nth-child(even){border-right:none;}.advisor-card{flex-direction:column;}.footer-bottom{flex-direction:column;align-items:flex-start;}.research-grid{grid-template-columns:1fr;}}
+  :root {
+    --teal: #00bfb3;
+    --teal-dim: #0d8f8a;
+    --teal-glow: rgba(0,191,179,0.08);
+    --navy: #0f1b35;
+    --bg: #ffffff;
+    --bg2: #f7f7f5;
+    --bg3: #eeeee9;
+    --text: #1a1a1a;
+    --muted: #6b7280;
+    --border: rgba(15,27,53,0.08);
+    --nav-h: 64px;
+    --px: clamp(20px, 5vw, 60px);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', 'DM Sans', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ─────────────────────────────────────── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    height: var(--nav-h);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 var(--px);
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 8px;
+    cursor: pointer; text-decoration: none; flex-shrink: 0;
+  }
+  .nav-logo img, .nav-logo svg { width: 30px; height: 30px; }
+  .logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-weight: 600; color: var(--text);
+  }
+  .logo-text span { color: var(--teal); }
+  .nav-links {
+    display: flex; align-items: center; gap: 32px; list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none; color: var(--muted);
+    font-size: 12px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase;
+    transition: color 0.2s; cursor: pointer;
+  }
+  .nav-links a:hover, .nav-links a.active { color: var(--teal); }
+  .nav-cta {
+    padding: 8px 18px; border: 1px solid var(--teal);
+    color: var(--teal) !important; border-radius: 2px;
+    transition: background 0.2s, color 0.2s !important;
+  }
+  .nav-cta:hover { background: var(--teal) !important; color: var(--bg) !important; }
+
+  /* Dropdown */
+  .nav-dropdown { position: relative; padding-bottom: 12px; margin-bottom: -12px; }
+  .nav-dropdown > a::after {
+    content: ''; display: inline-block; width: 0; height: 0; margin-left: 5px;
+    border-left: 4px solid transparent; border-right: 4px solid transparent;
+    border-top: 4px solid currentColor; vertical-align: middle;
+  }
+  .dropdown-menu {
+    display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+    min-width: 220px; padding: 8px 0;
+    background: rgba(255,255,255,0.97); backdrop-filter: blur(16px); box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: 1px solid var(--border); z-index: 100;
+  }
+  .dropdown-menu a {
+    display: block; padding: 10px 20px;
+    font-size: 11px !important; letter-spacing: 0.06em !important; text-transform: none !important;
+    color: var(--muted) !important; transition: all 0.2s;
+  }
+  .dropdown-menu a:hover { color: var(--teal) !important; background: var(--teal-glow); }
+  .nav-dropdown:hover .dropdown-menu { display: block; }
+
+  /* Hamburger */
+  .hamburger {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    width: 36px; height: 36px; cursor: pointer;
+    background: none; border: none; padding: 4px;
+  }
+  .hamburger span {
+    display: block; width: 22px; height: 1.5px;
+    background: var(--text); transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+
+  /* Mobile menu */
+  .mobile-menu {
+    display: none; position: fixed;
+    top: var(--nav-h); left: 0; right: 0; bottom: 0;
+    background: rgba(255,255,255,0.98); backdrop-filter: blur(20px);
+    z-index: 999; flex-direction: column;
+    padding: 32px var(--px); overflow-y: auto;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    display: block; padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+    text-decoration: none; color: var(--text);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(24px, 6vw, 32px); font-weight: 300;
+    cursor: pointer; transition: color 0.2s;
+  }
+  .mobile-menu a:hover { color: var(--teal); }
+  .mobile-menu .m-sub {
+    font-family: 'DM Sans', sans-serif; font-size: 14px; font-weight: 300;
+    padding: 12px 0 12px 20px; border-bottom: 1px solid var(--border);
+  }
+  .mobile-menu .m-cta {
+    margin-top: 28px; padding: 16px 0; text-align: center;
+    border: 1px solid var(--teal) !important;
+    color: var(--teal) !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-size: 13px !important; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+
+  /* ── PAGE SYSTEM ─────────────────────────────── */
+  .page { display: none; padding-top: var(--nav-h); }
+  .page.active { display: block; animation: fadeUp 0.5s ease forwards; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── SHARED TOKENS ───────────────────────────── */
+  .section-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-tag::before { content:''; width:20px; height:1px; background:var(--teal); }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 300; line-height: 1.1; letter-spacing: -0.01em;
+  }
+  .section-title em { font-style: italic; color: var(--teal); }
+  .teal  { color: var(--teal); }
+  .muted { color: var(--muted); }
+
+  .section { padding: clamp(32px,5vw,64px) var(--px); }
+  .section-sm { padding: clamp(20px,3vw,40px) var(--px); }
+  .section-header { margin-bottom: clamp(20px,3vw,36px); }
+  .divider { height: 1px; background: var(--border); }
+
+  /* Responsive card grid */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border);
+  }
+  .card {
+    background: var(--bg); padding: clamp(20px,3vw,32px) clamp(16px,2.5vw,28px);
+    position: relative; overflow: hidden; transition: background 0.3s;
+  }
+  .card:hover { background: var(--bg3); }
+  .card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background: linear-gradient(90deg, var(--teal), transparent);
+    transform: scaleX(0); transform-origin: left; transition: transform 0.4s;
+  }
+  .card:hover::before { transform: scaleX(1); }
+
+  /* Two-col that stacks on mobile */
+  .two-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: clamp(24px, 4vw, 48px); align-items: start;
+  }
+
+  /* ── HERO ────────────────────────────────────── */
+  .hero {
+    min-height: calc(100vh - var(--nav-h) - 200px);
+    display: grid; grid-template-columns: 1fr 1fr; align-items: center;
+    padding: clamp(32px,5vw,64px) var(--px) clamp(16px,2vw,24px);
+    position: relative; overflow: hidden; gap: 32px;
+  }
+  .hero.hero-full { grid-template-columns: 1fr; }
+  .hero.hero-full .hero-content { max-width: 720px; }
+  .hero.hero-bg-image { background-size: cover; background-position: center; }
+  .hero.hero-bg-image .hero-content { position: relative; z-index: 2; }
+  .hero.hero-bg-image::after { content:''; position:absolute; inset:0; background:rgba(255,255,255,0.85); z-index:1; }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: 0;
+    background: radial-gradient(ellipse 80% 60% at 65% 50%, rgba(0,191,179,0.05) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 15% 80%, rgba(0,143,138,0.07) 0%, transparent 60%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; z-index: 0; opacity: 0.025;
+    background-image: linear-gradient(var(--teal) 1px, transparent 1px),
+                      linear-gradient(90deg, var(--teal) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-content { position: relative; z-index: 1; }
+  .hero-eyebrow {
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.18em;
+    color: var(--teal); text-transform: uppercase; margin-bottom: 24px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--teal); }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 6vw, 80px);
+    font-weight: 300; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 24px;
+  }
+  .hero-title em { font-style: italic; color: var(--teal); }
+  .hero-sub {
+    font-size: clamp(14px, 2vw, 16px); color: var(--muted); line-height: 1.75;
+    max-width: 520px; margin-bottom: 28px;
+  }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn-primary {
+    padding: 13px clamp(20px,3vw,32px); background: var(--teal); color: var(--bg);
+    font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+    border: none; cursor: pointer; border-radius: 2px;
+    transition: background 0.2s, transform 0.15s; white-space: nowrap;
+  }
+  .btn-primary { color: #fff; }
+  .btn-primary:hover { background: #00d4c8; transform: translateY(-1px); }
+  .btn-ghost {
+    padding: 12px clamp(20px,3vw,32px); border: 1px solid var(--border); color: var(--text);
+    font-size: 12px; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase;
+    background: transparent; cursor: pointer; border-radius: 2px;
+    transition: border-color 0.2s, color 0.2s; white-space: nowrap;
+  }
+  .btn-ghost:hover { border-color: var(--teal); color: var(--teal); }
+
+  /* Hero image placeholder */
+  .hero-image {
+    position: relative; z-index: 1;
+    width: 100%; aspect-ratio: 4/3;
+    border: 2px dashed var(--border);
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 12px;
+    background: rgba(0,191,179,0.03); border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  .hero-image:hover { border-color: var(--teal-dim); }
+  .hero-image svg { opacity: 0.3; }
+  .hero-image span { font-size: 11px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+
+  /* Stats strip */
+  .stats-strip {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--border);
+  }
+  .stat-cell {
+    padding: clamp(14px,2vw,24px) clamp(14px,2vw,24px);
+    border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+    transition: background 0.3s;
+  }
+  .stat-cell:hover { background: var(--teal-glow); }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px,5vw,48px); font-weight: 300; color: var(--teal);
+    line-height: 1; margin-bottom: 6px;
+  }
+  .stat-label {
+    font-size: 11px; font-weight: 400; letter-spacing: 0.07em;
+    color: var(--muted); text-transform: uppercase;
+  }
+
+  /* Card content atoms */
+  .opp-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px; font-weight: 300; line-height: 1;
+    color: var(--teal); opacity: 0.18; margin-bottom: 18px;
+  }
+  .card-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(18px,2.5vw,22px); font-weight: 400; margin-bottom: 12px;
+  }
+  .card-desc { font-size: 13px; color: var(--muted); line-height: 1.75; }
+
+  /* About / Why Us */
+  .about-text p { font-size: 14px; color: var(--muted); line-height: 1.8; margin-bottom: 18px; }
+  .about-text p strong { color: var(--text); font-weight: 400; }
+  .about-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(18px,3vw,26px); font-style: italic; line-height: 1.5;
+    color: var(--teal); padding-left: 20px; border-left: 2px solid var(--teal);
+  }
+
+  /* Research mini grid */
+  .research-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 28px;
+  }
+  .research-cell { background: var(--bg2); padding: clamp(18px,3vw,24px) clamp(16px,2vw,20px); }
+  .research-tag {
+    font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--teal); font-family: 'DM Mono', monospace; margin-bottom: 8px;
+  }
+  .research-name { font-family: 'Cormorant Garamond', serif; font-size: 15px; margin-bottom: 4px; }
+  .research-sub { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+  /* Ecosystem visual */
+  .eco-hub {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border);
+  }
+  .eco-spoke {
+    background: var(--bg2); padding: clamp(16px,2.5vw,24px);
+    transition: background 0.3s;
+  }
+  .eco-spoke:hover { background: var(--bg3); }
+  .eco-icon { color: var(--teal); margin-bottom: 8px; }
+  .eco-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px; margin-bottom: 8px;
+  }
+  .eco-desc { font-size: 12px; color: var(--muted); line-height: 1.65; }
+
+  /* Backer grid */
+  .backer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border);
+  }
+  .backer-card {
+    background: var(--bg2); padding: clamp(18px,3vw,28px);
+    text-align: center; transition: background 0.3s;
+  }
+  .backer-card:hover { background: var(--bg3); }
+  .backer-img {
+    width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 16px;
+    border: 2px dashed var(--border); display: flex; align-items: center; justify-content: center;
+    background: rgba(0,191,179,0.03); overflow: hidden;
+  }
+  .backer-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .backer-name { font-family: 'Cormorant Garamond', serif; font-size: 18px; margin-bottom: 4px; }
+  .backer-title { font-size: 11px; color: var(--muted); line-height: 1.5; }
+
+  /* Density bars */
+  .density-bars { margin-top: 36px; display: flex; flex-direction: column; gap: 12px; }
+  .density-row { display: flex; align-items: center; gap: 14px; }
+  .density-label { width: 48px; font-size: 12px; color: var(--muted); text-align: right; flex-shrink: 0; }
+  .density-bar-wrap { flex: 1; height: 32px; background: var(--bg3); overflow: hidden; }
+  .density-bar {
+    height: 100%; background: linear-gradient(90deg, var(--teal-dim), var(--teal));
+    display: flex; align-items: center; padding-left: 10px;
+    font-size: 12px; font-weight: 500; color: var(--bg); white-space: nowrap;
+  }
+
+  /* Portfolio — RPSG-inspired logo-forward grid */
+  .port-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border);
+  }
+  .port-card {
+    background: var(--bg); padding: clamp(24px,3vw,36px) clamp(20px,3vw,32px);
+    position: relative; overflow: hidden; transition: background 0.4s;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+  }
+  .port-card:hover { background: var(--bg3); }
+  .port-card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background: linear-gradient(90deg, var(--teal), transparent);
+    transform: scaleX(0); transform-origin: left; transition: transform 0.4s;
+  }
+  .port-card:hover::before { transform: scaleX(1); }
+  .port-logo {
+    width: 160px; height: 80px; margin-bottom: 24px;
+    border: 1.5px dashed var(--border); border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,191,179,0.02); overflow: hidden;
+    transition: border-color 0.3s;
+  }
+  .port-card:hover .port-logo { border-color: var(--teal-dim); }
+  .port-logo img { max-height: 64px; max-width: 90%; object-fit: contain; }
+  .port-logo span { font-size: 10px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+  .port-brand { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px,3vw,28px); font-weight: 600; margin-bottom: 6px; }
+  .port-cat {
+    font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 20px; font-family: 'DM Mono', monospace;
+  }
+  .port-metric {
+    display: flex; align-items: baseline; gap: 8px; margin-bottom: 8px;
+  }
+  .port-num { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px,5vw,40px); font-weight: 300; color: var(--teal); line-height: 1; }
+  .port-num-label { font-size: 10px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  .port-desc {
+    font-size: 13px; color: var(--muted); line-height: 1.75; margin-top: 16px;
+    max-height: 0; overflow: hidden; opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+  }
+  .port-card:hover .port-desc { max-height: 200px; opacity: 1; }
+  .port-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; justify-content: center; }
+  .port-tag { padding: 4px 10px; border: 1px solid var(--border); font-size: 10px; color: var(--muted); letter-spacing: 0.06em; transition: border-color 0.3s; }
+  .port-card:hover .port-tag { border-color: rgba(0,191,179,0.25); }
+
+  /* Team — horizontal layout: image left, info right */
+  .team-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
+    border: 1px solid var(--border); background: var(--border);
+  }
+  .team-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .team-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .team-grid.cols-5 { grid-template-columns: repeat(3, 1fr); }
+  .team-member {
+    display: flex; flex-direction: column; background: var(--bg);
+    transition: background 0.3s; overflow: hidden;
+  }
+  .team-member:hover { background: var(--bg3); }
+  .team-ava {
+    width: 100%; aspect-ratio: 1/1; position: relative; overflow: hidden;
+    background: var(--bg2); display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif; font-size: 48px; color: var(--teal);
+  }
+  .team-ava img {
+    width: 100%; height: 100%; object-fit: cover;
+    filter: grayscale(20%); transition: filter 0.4s, transform 0.4s;
+  }
+  .team-member:hover .team-ava img { filter: grayscale(0%); transform: scale(1.03); }
+  .team-info { padding: clamp(16px,2.5vw,24px); flex: 1; display: flex; flex-direction: column; }
+  .team-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px,2.5vw,26px); margin-bottom: 4px; font-weight: 400; }
+  .team-name a { color: var(--text); text-decoration: none; transition: color 0.2s; }
+  .team-name a:hover { color: var(--teal); }
+  .team-role {
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--teal); margin-bottom: 12px; font-family: 'DM Mono', monospace;
+  }
+  .team-bio { font-size: 13px; color: var(--muted); line-height: 1.7; flex: 1; }
+  .team-badge { display: inline-block; margin-top: 12px; padding: 4px 10px; border: 1px solid var(--border); font-size: 11px; color: var(--muted); }
+  .team-linkedin {
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 12px;
+    font-size: 11px; color: var(--teal); text-decoration: none; letter-spacing: 0.04em;
+    transition: opacity 0.2s;
+  }
+  .team-linkedin:hover { opacity: 0.8; }
+  @media (max-width: 768px) { .team-grid, .team-grid.cols-2, .team-grid.cols-4, .team-grid.cols-5 { grid-template-columns: 1fr; } }
+
+  .advisor-card {
+    background: var(--bg2); padding: clamp(18px,3vw,28px);
+    display: flex; gap: 16px; align-items: flex-start; transition: background 0.3s;
+  }
+  .advisor-card:hover { background: var(--bg3); }
+  .advisor-ava {
+    width: 64px; height: 64px; border-radius: 50%; flex-shrink: 0;
+    border: 2px dashed var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif; font-size: 18px; color: var(--teal);
+    background: rgba(0,191,179,0.03); overflow: hidden;
+  }
+  .advisor-ava img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .advisor-name { font-family: 'Cormorant Garamond', serif; font-size: 20px; margin-bottom: 4px; }
+  .advisor-name a { color: var(--text); text-decoration: none; transition: color 0.2s; }
+  .advisor-name a:hover { color: var(--teal); }
+  .advisor-role { font-size: 10px; color: var(--teal); letter-spacing: 0.1em; text-transform: uppercase; font-family: 'DM Mono', monospace; margin-bottom: 10px; }
+  .advisor-bio { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+  .gov-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border); margin-top: 20px;
+  }
+  .gov-cell { background: var(--bg2); padding: clamp(14px,2vw,22px); text-align: center; }
+  .gov-tag { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); font-family: 'DM Mono', monospace; margin-bottom: 8px; }
+  .gov-logo {
+    width: 100%; height: 40px; margin-bottom: 8px;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px dashed var(--border); border-radius: 2px;
+    background: rgba(0,191,179,0.02); overflow: hidden;
+  }
+  .gov-logo img { max-height: 32px; max-width: 80%; object-fit: contain; }
+  .gov-logo span { font-size: 9px; color: var(--muted); }
+  .gov-name { font-family: 'Cormorant Garamond', serif; font-size: 17px; margin-bottom: 4px; }
+  .gov-sub { font-size: 11px; color: var(--muted); }
+
+  /* Thesis */
+  .thesis-meta { display: flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+  .thesis-meta-row { background: var(--bg2); padding: clamp(16px,3vw,24px) clamp(18px,3vw,28px); }
+  .thesis-meta-tag { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); font-family: 'DM Mono', monospace; margin-bottom: 6px; }
+  .thesis-meta-val { font-family: 'Cormorant Garamond', serif; font-size: 17px; }
+
+  .pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; line-height: 1; color: var(--teal); opacity: 0.12; margin-bottom: 12px; }
+  .pillar-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(18px,2.5vw,22px); margin-bottom: 12px; }
+  .pillar-desc { font-size: 13px; color: var(--muted); line-height: 1.75; }
+
+  /* Exit cols */
+  .exit-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border);
+  }
+  .exit-col { background: var(--bg2); padding: clamp(24px,4vw,40px); }
+  .exit-col-tag {
+    font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+    color: var(--teal); font-family: 'DM Mono', monospace; margin-bottom: 20px;
+  }
+  .exit-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 13px;
+  }
+  .exit-row:last-child { border-bottom: none; }
+  .exit-multiple {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; color: var(--teal); font-weight: 400;
+  }
+
+  /* Table */
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .exit-table { width: 100%; min-width: 480px; border-collapse: collapse; margin-top: 28px; }
+  .exit-table th {
+    text-align: left; padding: 12px 14px;
+    font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--teal); font-weight: 400; font-family: 'DM Mono', monospace;
+    border-bottom: 1px solid var(--border);
+  }
+  .exit-table td {
+    padding: 16px 14px; font-size: 13px; color: var(--text);
+    border-bottom: 1px solid var(--border); vertical-align: middle;
+  }
+  .exit-table tr:hover td { background: var(--teal-glow); }
+
+  /* Social icons */
+  .social-icons { display: flex; gap: 12px; margin-top: 16px; }
+  .social-icons a {
+    display: flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 2px;
+    color: var(--muted); transition: all 0.2s;
+  }
+  .social-icons a:hover { border-color: var(--teal); color: var(--teal); background: var(--teal-glow); }
+  .social-icons a svg { width: 16px; height: 16px; }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: clamp(28px,4vw,48px) var(--px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    gap: clamp(24px,3vw,40px); background: var(--bg2);
+  }
+  .footer-brand p { font-size: 13px; color: var(--muted); line-height: 1.7; margin-top: 12px; }
+  .footer-col h4 { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--teal); margin-bottom: 14px; font-family: 'DM Mono', monospace; }
+  .footer-col ul { list-style: none; }
+  .footer-col ul li { margin-bottom: 10px; }
+  .footer-col ul li a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color 0.2s; cursor: pointer; }
+  .footer-col ul li a:hover { color: var(--teal); }
+  .footer-bottom {
+    padding: 16px var(--px);
+    border-top: 1px solid var(--border);
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+    gap: 8px; background: var(--bg2);
+  }
+  .footer-bottom p { font-size: 11px; color: var(--muted); font-family: 'DM Mono', monospace; }
+
+  /* ── MEDIA QUERIES ───────────────────────────── */
+  @media (min-width: 641px) {
+    .hamburger { display: none; }
+    .mobile-menu { display: none !important; }
+    .stats-strip { grid-template-columns: repeat(4, 1fr); }
+    .stat-cell:nth-child(even) { border-right: 1px solid var(--border); }
+  }
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-image { display: none; }
+    .stat-cell:nth-child(odd) { border-right: 1px solid var(--border); }
+    .stat-cell:nth-child(even) { border-right: none; }
+    .advisor-card { flex-direction: column; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; }
+    .research-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Blog / Musings */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 1px; background: var(--border); border: 1px solid var(--border);
+  }
+  .blog-card {
+    background: var(--bg); padding: clamp(16px,2.5vw,24px);
+    overflow: hidden; transition: background 0.3s;
+    cursor: pointer; text-decoration: none; color: inherit; display: block;
+    position: relative;
+  }
+  .blog-card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background: linear-gradient(90deg, var(--teal), transparent);
+    transform: scaleX(0); transform-origin: left; transition: transform 0.4s;
+  }
+  .blog-card:hover::before { transform: scaleX(1); }
+  .blog-card:hover { background: var(--bg3); }
+  .blog-thumb {
+    width: 100%; aspect-ratio: 16/9; border-radius: 4px; max-height: 160px;
+    background: var(--bg2); display: flex; align-items: center; justify-content: center;
+    overflow: hidden; margin-bottom: 14px; border: 1px solid var(--border);
+  }
+  .blog-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .blog-thumb span { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+  .blog-body { padding: 0; }
+  .blog-date { font-size: 10px; color: var(--teal); font-family: 'DM Mono', monospace; letter-spacing: 0.1em; margin-bottom: 8px; }
+  .blog-title { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; margin-bottom: 10px; line-height: 1.3; }
+  .blog-excerpt { font-size: 13px; color: var(--muted); line-height: 1.7; }
+  .blog-read { margin-top: 14px; font-size: 10px; color: var(--teal); letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* Single Blog Post View */
+  .blog-post { max-width: 720px; margin: 0 auto; }
+  .blog-post h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px,5vw,48px); font-weight: 300; line-height: 1.15; margin-bottom: 16px; }
+  .blog-post .post-meta { font-size: 12px; color: var(--muted); margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+  .blog-post .post-content { font-size: 15px; line-height: 1.85; color: var(--text); }
+  .blog-post .post-content p { margin-bottom: 20px; }
+  .blog-post .post-content img { width: 100%; border-radius: 4px; margin: 24px 0; }
+  .blog-post .post-content h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 400; margin: 36px 0 16px; }
+  .blog-post .post-content h3 { font-size: 18px; font-weight: 500; margin: 28px 0 12px; }
+  .blog-post .post-content blockquote { border-left: 2px solid var(--teal); padding-left: 20px; font-style: italic; color: var(--muted); margin: 24px 0; }
+  .blog-post .post-content video { width: 100%; border-radius: 4px; margin: 24px 0; }
 </style>
 </head>
 <body>
+
+<!-- ═══ NAV ════════════════════════════════════════════ -->
 <nav>
   <div class="nav-logo" onclick="showPage('home')">
-    <svg viewBox="0 0 40 40" fill="none"><path d="M20 4L36 28L20 22L4 28Z" fill="none" stroke="#00bfb3" stroke-width="1.5"/><path d="M20 14L28 28L20 24L12 28Z" fill="#00bfb3" opacity="0.4"/></svg>
-    <span class="logo-text">th<span>î</span>nk9</span>
+    <img src="Logo Assets/think9-founders-fund-BLACK.png" alt="Think9 Founders Fund" style="height:36px;width:auto;">
   </div>
-  <ul class="nav-links">
+
+  <ul class="nav-links" id="navLinksContainer">
     <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
     <li class="nav-dropdown">
       <a onclick="showPage('whyus')" id="nav-whyus">Why Us</a>
@@ -229,9 +723,14 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
     <li><a onclick="showPage('team')" id="nav-team">Team</a></li>
     <li><a onclick="showPage('thesis')" id="nav-thesis">Our Thesis</a></li>
     <li><a href="mailto:partner@think9.vc" class="nav-cta">Get in Touch</a></li>
+    <li><a onclick="showPage('investor')" class="nav-cta" style="margin-left:4px;background:transparent;border-color:var(--muted);color:var(--muted) !important;">Investor Login</a></li>
   </ul>
-  <button class="hamburger" id="ham" onclick="toggleMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+
+  <button class="hamburger" id="ham" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
 <div class="mobile-menu" id="mobileMenu">
   <a onclick="showPage('home');closeMenu()">Home</a>
   <a onclick="showPage('whyus');closeMenu()">Why Us</a>
@@ -242,29 +741,57 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
   <a onclick="showPage('investments');closeMenu()">Investments</a>
   <a onclick="showPage('team');closeMenu()">Team</a>
   <a onclick="showPage('thesis');closeMenu()">Our Thesis</a>
+  <a onclick="showPage('partners');closeMenu()">Service Partners</a>
+  <a onclick="showPage('media');closeMenu()">Media</a>
+  <a onclick="showPage('musings');closeMenu()">Musings</a>
+  <a onclick="showPage('investor');closeMenu()">Investor Relations</a>
   <a href="mailto:partner@think9.vc" class="m-cta">Get in Touch →</a>
 </div>
 
+<main role="main">
+<!-- ═══ HOME ════════════════════════════════════════════ -->
 <div class="page active" id="page-home">
+
   <section class="hero">
-    <div class="hero-bg"></div><div class="hero-grid"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
     <div class="hero-content">
       <div class="hero-eyebrow">Think9 Founders Fund — SEBI Cat II AIF</div>
       <h1 class="hero-title">We get it right,<br/><em>right at the beginning.</em></h1>
       <p class="hero-sub">India's most distinctive consumer-brand fund — backing the next generation of founders building iconic brands at the intersection of a rising consuming class, digital infrastructure, and unprecedented branded consumption growth.</p>
       <div class="hero-actions">
         <button class="btn-primary" onclick="showPage('investments')">View Portfolio</button>
-        <button class="btn-ghost" onclick="showPage('thesis')">Our Thesis</button>
+        <button class="btn-ghost"   onclick="showPage('thesis')">Our Thesis</button>
       </div>
     </div>
     <div class="hero-image" id="hero-img-placeholder">
-      <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" style="color:var(--teal);"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+      <svg width="48" height="48" fill="none" stroke="currentColor" stroke-width="1" viewBox="0 0 24 24" style="color:var(--teal);">
+        <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/>
+      </svg>
       <span>Hero Image — Upload via CMS</span>
     </div>
   </section>
 
-  <div class="stats-strip"><div class="stat-cell"><div class="stat-num">₹200Cr</div><div class="stat-label">Target Fund Size</div></div><div class="stat-cell"><div class="stat-num">15-18</div><div class="stat-label">Strategic Investments</div></div><div class="stat-cell"><div class="stat-num">upto 20cr</div><div class="stat-label">Cheque Sizes</div></div><div class="stat-cell"><div class="stat-num">40% capital</div><div class="stat-label">Reserve for Follow ons</div></div></div>
+  <div class="stats-strip">
+    <div class="stat-cell">
+      <div class="stat-num">₹200<small style="font-size:0.5em">Cr</small></div>
+      <div class="stat-label">Target Fund Size</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">12–15</div>
+      <div class="stat-label">Strategic Investments</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">$730<small style="font-size:0.5em">Bn</small></div>
+      <div class="stat-label">Branded Market 2030</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-num">8%</div>
+      <div class="stat-label">India GDP Growth</div>
+    </div>
+  </div>
 
+  <!-- Why Us Teasers on Home -->
   <section class="section-sm">
     <div class="section-header">
       <div class="section-tag">Why Think9</div>
@@ -293,10 +820,13 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
       </div>
     </div>
   </section>
+
 </div>
 
+<!-- ═══ WHY US ════════════════════════════════════════════ -->
 <div class="page" id="page-whyus">
 
+  <!-- Section 1: Differentiated Approach -->
   <section class="section" id="wu-approach">
     <div class="two-col">
       <div class="about-text">
@@ -336,6 +866,7 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
 
   <div class="divider"></div>
 
+  <!-- Section 2: Consumer Understanding -->
   <section class="section" id="wu-consumer" style="background:var(--bg2);">
     <div class="two-col">
       <div>
@@ -373,6 +904,7 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
 
   <div class="divider"></div>
 
+  <!-- Section 3: Ecosystem -->
   <section class="section" id="wu-ecosystem">
     <div class="section-header">
       <div class="section-tag">Our Ecosystem</div>
@@ -427,6 +959,7 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
 
   <div class="divider"></div>
 
+  <!-- Section 4: Early Backers -->
   <section class="section" id="wu-backers" style="background:var(--bg2);">
     <div class="section-header">
       <div class="section-tag">Early Backers</div>
@@ -434,32 +967,37 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
       <p class="muted" style="margin-top:14px;font-size:14px;max-width:500px;line-height:1.75;">India's most successful entrepreneurs trust Think9 with their capital. Their conviction validates our thesis and approach.</p>
     </div>
     <div class="backer-grid">
-<div class="backer-card">
-      <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
-      <div class="backer-name">Varun Alagh</div>
-      <div class="backer-title">Co-founder, Honasa Consumer</div>
-    </div><div class="backer-card">
-      <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
-      <div class="backer-name">Suyash Saraf</div>
-      <div class="backer-title">Co-founder, Dot & Key</div>
-    </div><div class="backer-card">
-      <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
-      <div class="backer-name">Kunal Bahl</div>
-      <div class="backer-title">Co-founder, Titan Capital & Snapdeal</div>
-    </div><div class="backer-card">
-      <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
-      <div class="backer-name">Vijay Shekhar Sharma</div>
-      <div class="backer-title">Founder, Paytm</div>
-    </div><div class="backer-card">
-      <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
-      <div class="backer-name">Akash Chaudhary</div>
-      <div class="backer-title">Co-founder, Akash Education</div>
-    </div>
+      <div class="backer-card">
+        <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
+        <div class="backer-name">Varun Alagh</div>
+        <div class="backer-title">Co-founder, Honasa Consumer</div>
+      </div>
+      <div class="backer-card">
+        <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
+        <div class="backer-name">Suyash Saraf</div>
+        <div class="backer-title">Co-founder, Dot & Key</div>
+      </div>
+      <div class="backer-card">
+        <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
+        <div class="backer-name">Kunal Bahl</div>
+        <div class="backer-title">Co-founder, Titan Capital & Snapdeal</div>
+      </div>
+      <div class="backer-card">
+        <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
+        <div class="backer-name">Vijay Shekhar Sharma</div>
+        <div class="backer-title">Founder, Paytm</div>
+      </div>
+      <div class="backer-card">
+        <div class="backer-img"><span style="font-size:10px;color:var(--muted);">Photo</span></div>
+        <div class="backer-name">Akash Chaudhary</div>
+        <div class="backer-title">Co-founder, Akash Education</div>
+      </div>
     </div>
   </section>
 
 </div>
 
+<!-- ═══ INVESTMENTS ════════════════════════════════════════════ -->
 <div class="page" id="page-investments">
 
   <section class="section">
@@ -469,42 +1007,54 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
       <p class="muted" style="margin-top:14px;font-size:14px;max-width:500px;line-height:1.75;">Think9's portfolio spans nutrition, probiotics, and lifestyle retail — all scaling through distinct channel playbooks.</p>
     </div>
     <div class="port-grid">
-<div class="port-card">
-      <div class="port-logo"><span>Logo</span></div>
-      <div class="port-brand">SuperYou</div>
-      <div class="port-cat">Nutrition & Wellness</div>
-      <div class="port-metric">
-        <div class="port-num">200Cr+</div>
+      <div class="port-card">
+        <div class="port-logo"><span>Logo</span></div>
+        <div class="port-brand">SuperYou</div>
+        <div class="port-cat">Nutrition & Wellness</div>
+        <div class="port-metric">
+          <div class="port-num">200Cr+</div>
+        </div>
+        <div class="port-num-label">ARR — fastest in the country</div>
+        <div class="port-tags">
+          <span class="port-tag">Q-Commerce</span>
+          <span class="port-tag">Celebrity Marketing</span>
+        </div>
+        <div class="port-desc">India's fastest brand to reach ₹200Cr ARR, leveraging q-commerce and a celebrity-led marketing playbook built in-house by Think9.</div>
       </div>
-      <div class="port-num-label">ARR — fastest in the country</div>
-      <div class="port-tags"><span class="port-tag">Q-Commerce · Celebrity Marketing</span></div>
-      <div class="port-desc">India's fastest brand to reach ₹200Cr ARR, leveraging q-commerce and a celebrity-led marketing playbook.</div>
-    </div><div class="port-card">
-      <div class="port-logo"><span>Logo</span></div>
-      <div class="port-brand">The Good Bug</div>
-      <div class="port-cat">Daily Probiotics</div>
-      <div class="port-metric">
-        <div class="port-num">1Mn+</div>
+      <div class="port-card">
+        <div class="port-logo"><span>Logo</span></div>
+        <div class="port-brand">The Good Bug</div>
+        <div class="port-cat">Daily Probiotics</div>
+        <div class="port-metric">
+          <div class="port-num">1Mn+</div>
+        </div>
+        <div class="port-num-label">Consumers</div>
+        <div class="port-tags">
+          <span class="port-tag">D2C</span>
+          <span class="port-tag">Category Creator</span>
+        </div>
+        <div class="port-desc">Category creator of Gut Health in India. Built on direct-to-consumer channels, serving 1 million+ consumers with clinically validated probiotic nutrition.</div>
       </div>
-      <div class="port-num-label">Consumers</div>
-      <div class="port-tags"><span class="port-tag">D2C · Category Creator</span></div>
-      <div class="port-desc">Category creator of Gut Health in India, serving 1 million+ consumers with clinically validated probiotic nutrition.</div>
-    </div><div class="port-card">
-      <div class="port-logo"><span>Logo</span></div>
-      <div class="port-brand">Kingdom of White</div>
-      <div class="port-cat">Lifestyle & Apparel</div>
-      <div class="port-metric">
-        <div class="port-num">30+</div>
+      <div class="port-card">
+        <div class="port-logo"><span>Logo</span></div>
+        <div class="port-brand">Kingdom of White</div>
+        <div class="port-cat">Lifestyle & Apparel</div>
+        <div class="port-metric">
+          <div class="port-num">30+</div>
+        </div>
+        <div class="port-num-label">Offline Stores</div>
+        <div class="port-tags">
+          <span class="port-tag">Physical Retail</span>
+          <span class="port-tag">Lifestyle</span>
+        </div>
+        <div class="port-desc">India's first all-white lifestyle brand, cracking premium physical retail with industry-leading stock turns and a pioneering aesthetic language.</div>
       </div>
-      <div class="port-num-label">Offline Stores</div>
-      <div class="port-tags"><span class="port-tag">Physical Retail · Lifestyle</span></div>
-      <div class="port-desc">India's first all-white lifestyle brand, cracking premium physical retail with industry-leading stock turns.</div>
-    </div>
     </div>
   </section>
 
 </div>
 
+<!-- ═══ TEAM ════════════════════════════════════════════ -->
 <div class="page" id="page-team">
 
   <section class="section">
@@ -513,29 +1063,46 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
       <h1 class="section-title">Built by Founders, <em>not VCs</em></h1>
       <p class="muted" style="margin-top:14px;font-size:14px;max-width:500px;line-height:1.75;">We know what it takes because we've done it — zero-to-scale across consumer brands, experiential retail, family offices, and D2C communities.</p>
     </div>
-    <div class="card-grid">
-<div class="card">
-      <div class="team-ava">VB</div>
-      <div class="team-name"><a href="#" target="_blank">Vivek Biyani</a></div>
-      <div class="team-role">Partner</div>
-      <div class="team-bio">Founded Broadway — India's leading experiential retail destination for 100+ D2C brands. Pioneered Big Bazaar Direct at Future Group.</div>
-      <div class="team-badge">University of Michigan · Ross School of Business</div>
-      
-    </div><div class="card">
-      <div class="team-ava">AS</div>
-      <div class="team-name"><a href="#" target="_blank">Apurva Salarpuria</a></div>
-      <div class="team-role">Partner</div>
-      <div class="team-bio">Executive Director of Salarpuria Group and Principal at Salarpuria Family Office. Institutional rigour and a multi-decade network across Indian business families.</div>
-      <div class="team-badge">Institute of Chartered Accountants of India</div>
-      
-    </div><div class="card">
-      <div class="team-ava">KL</div>
-      <div class="team-name"><a href="#" target="_blank">Kshitij Ladia</a></div>
-      <div class="team-role">Partner</div>
-      <div class="team-bio">Built D2C Insider — a 7,000+ strong D2C founder community. Led strategy, operations, and supply chain transformations at CarDekho and PharmEasy.</div>
-      <div class="team-badge">D2C Insider · CarDekho · PharmEasy</div>
-      
-    </div>
+    <div class="team-grid">
+      <div class="team-member">
+        <div class="team-ava"><span>VB</span></div>
+        <div class="team-info">
+          <div class="team-name"><a href="#" target="_blank">Vivek Biyani</a></div>
+          <div class="team-role">Partner</div>
+          <div class="team-bio">Founded Broadway — India's leading experiential retail destination for 100+ D2C brands. Pioneered Big Bazaar Direct at Future Group. Deep expertise in retail formats, consumer behaviour, and omnichannel brand building.</div>
+          <div class="team-badge">University of Michigan · Ross School of Business</div>
+          <a href="#" target="_blank" class="team-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-ava"><span>AS</span></div>
+        <div class="team-info">
+          <div class="team-name"><a href="#" target="_blank">Apurva Salarpuria</a></div>
+          <div class="team-role">Partner</div>
+          <div class="team-bio">Executive Director of Salarpuria Group and Principal at Salarpuria Family Office. Institutional rigour, financial structuring depth, and a multi-decade network across Indian business families and investment circles.</div>
+          <div class="team-badge">Institute of Chartered Accountants of India</div>
+          <a href="#" target="_blank" class="team-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+      <div class="team-member">
+        <div class="team-ava"><span>KL</span></div>
+        <div class="team-info">
+          <div class="team-name"><a href="#" target="_blank">Kshitij Ladia</a></div>
+          <div class="team-role">Partner</div>
+          <div class="team-bio">Built D2C Insider — a 7,000+ strong D2C founder community. Led strategy, operations, and supply chain transformations at CarDekho and PharmEasy. Unmatched founder network and operational playbook depth.</div>
+          <div class="team-badge">D2C Insider · CarDekho · PharmEasy</div>
+          <a href="#" target="_blank" class="team-linkedin">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -545,21 +1112,22 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
       <h2 class="section-title">Decades of <em>diverse perspectives</em></h2>
     </div>
     <div class="card-grid" style="background:var(--border);border:1px solid var(--border);">
-<div class="advisor-card">
-      <div class="team-ava">KB</div>
-      <div>
-        <div class="advisor-name"><a href="#" target="_blank">Kishore Biyani</a></div>
-        <div class="advisor-role">Founder & CEO, Future Group</div>
-        <div class="advisor-bio">Creator of Big Bazaar and Pantaloons. Known as the Father of Modern Retail in India. Built Future Group to $4.6Bn in revenue.</div>
+      <div class="advisor-card">
+        <div class="advisor-ava"><span>KB</span></div>
+        <div>
+          <div class="advisor-name"><a href="#" target="_blank">Kishore Biyani</a></div>
+          <div class="advisor-role">Founder & CEO, Future Group</div>
+          <div class="advisor-bio">Creator of Big Bazaar and Pantaloons. Known as the "Father of Modern Retail in India." Built Future Group to $4.6Bn in revenue. Provides unparalleled strategic advisory on mass retail, brand building, and consumer Bharat.</div>
+        </div>
       </div>
-    </div><div class="advisor-card">
-      <div class="team-ava">SD</div>
-      <div>
-        <div class="advisor-name"><a href="#" target="_blank">Santosh Desai</a></div>
-        <div class="advisor-role">MD & CEO, Futurebrands</div>
-        <div class="advisor-bio">India's foremost consumer culture expert. Ex-President, McCann-Erickson. 21+ years in advertising. Bestselling author. 19+ year columnist, Times of India.</div>
+      <div class="advisor-card">
+        <div class="advisor-ava"><span>SD</span></div>
+        <div>
+          <div class="advisor-name"><a href="#" target="_blank">Santosh Desai</a></div>
+          <div class="advisor-role">MD & CEO, Futurebrands</div>
+          <div class="advisor-bio">India's foremost consumer culture expert. Ex-President, McCann-Erickson. 21+ years in advertising. Bestselling author. 19+ year columnist, Times of India. Worked with Microsoft, Unilever, Coca-Cola, Philips, Hershey's, Reckitt.</div>
+        </div>
       </div>
-    </div>
     </div>
   </section>
 
@@ -569,14 +1137,39 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
       <h2 class="section-title">Best-in-class <em>institutional partners</em></h2>
     </div>
     <div class="gov-grid">
-<div class="gov-cell"><div class="gov-tag">Trustee</div><div class="gov-logo"><span style="font-size:9px;color:var(--muted);">Logo</span></div><div class="gov-name">Vistra ITCL</div><div class="gov-sub">Independent institutional trustee</div></div><div class="gov-cell"><div class="gov-tag">Legal Advisor</div><div class="gov-logo"><span style="font-size:9px;color:var(--muted);">Logo</span></div><div class="gov-name">Khaitan & Co.</div><div class="gov-sub">Tax & legal structuring</div></div><div class="gov-cell"><div class="gov-tag">Statutory Auditor</div><div class="gov-logo"><span style="font-size:9px;color:var(--muted);">Logo</span></div><div class="gov-name">Big 4 Firm</div><div class="gov-sub">Independent audit oversight</div></div><div class="gov-cell"><div class="gov-tag">Regulator</div><div class="gov-logo"><span style="font-size:9px;color:var(--muted);">Logo</span></div><div class="gov-name">SEBI Cat II</div><div class="gov-sub">Full regulatory compliance</div></div>
+      <div class="gov-cell">
+        <div class="gov-tag">Trustee</div>
+        <div class="gov-logo"><span>Logo</span></div>
+        <div class="gov-name">Vistra ITCL</div>
+        <div class="gov-sub">Independent institutional trustee</div>
+      </div>
+      <div class="gov-cell">
+        <div class="gov-tag">Legal Advisor</div>
+        <div class="gov-logo"><span>Logo</span></div>
+        <div class="gov-name">Khaitan & Co.</div>
+        <div class="gov-sub">Tax & legal structuring</div>
+      </div>
+      <div class="gov-cell">
+        <div class="gov-tag">Statutory Auditor</div>
+        <div class="gov-logo"><span>Logo</span></div>
+        <div class="gov-name">Big 4 Firm</div>
+        <div class="gov-sub">Independent audit oversight</div>
+      </div>
+      <div class="gov-cell">
+        <div class="gov-tag">Regulator</div>
+        <div class="gov-logo"><span>Logo</span></div>
+        <div class="gov-name">SEBI Cat II</div>
+        <div class="gov-sub">Full regulatory compliance</div>
+      </div>
     </div>
   </section>
 
 </div>
 
+<!-- ═══ THESIS ════════════════════════════════════════════ -->
 <div class="page" id="page-thesis">
 
+  <!-- Section 1: The India Story -->
   <section class="section">
     <div class="two-col">
       <div>
@@ -608,6 +1201,7 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
 
   <div class="divider"></div>
 
+  <!-- India One & India Two -->
   <section class="section-sm" style="background:var(--bg2);">
     <div class="section-header">
       <div class="section-tag">Our Framework</div>
@@ -629,6 +1223,7 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
 
   <div class="divider"></div>
 
+  <!-- Section 2: New Age Branded Consumption -->
   <section class="section">
     <div class="section-header">
       <div class="section-tag">New Age Branded Consumption</div>
@@ -655,12 +1250,32 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
     </div>
 
     <div class="card-grid">
-<div class="card"><div class="pillar-num">01</div><div class="pillar-title">Secular to Niche</div><div class="pillar-desc">Technology and media redesign how consumers consume. The era of 'happiness for everyone' brands gives way to targeted niches — nostalgia (Paper Boat), protein (Epigamia), natural (RAW).</div></div><div class="card"><div class="pillar-num">02</div><div class="pillar-title">Legacy Reinvented</div><div class="pillar-desc">The old comes back in new forms. Ayurveda reimagined with clinical validation and D2C (Kapiva, ₹345Cr at 87% CAGR). Legacy categories are the lowest hanging fruit.</div></div><div class="card"><div class="pillar-num">03</div><div class="pillar-title">The Educated Consumer</div><div class="pillar-desc">Consumption today is a profession. Consumers demand ingredient transparency. Minimalist sold to Unilever for ₹2,955Cr by winning label-reading consumers.</div></div><div class="card"><div class="pillar-num">04</div><div class="pillar-title">India Over Global Templates</div><div class="pillar-desc">Tier-2/3 consumers trust WhatsApp resellers over Amazon — Meesho has 175Mn users, 87% non-metro. Winning brands will be distinctly, deeply Indian.</div></div>
+      <div class="card">
+        <div class="pillar-num">01</div>
+        <div class="pillar-title">Secular to Niche</div>
+        <div class="pillar-desc">Technology and media redesign how consumers consume. "Happiness for everyone" brands give way to targeted niches — nostalgia (Paper Boat), protein (Epigamia), natural (RAW). We back founders who own their tribe.</div>
+      </div>
+      <div class="card">
+        <div class="pillar-num">02</div>
+        <div class="pillar-title">Legacy Reinvented</div>
+        <div class="pillar-desc">The old comes back in new forms. Ayurveda reimagined with clinical validation and D2C (Kapiva, ₹345Cr at 87% CAGR). Commodity ceiling fans redefined with BLDC tech (Atomberg, 23% premium share). Legacy categories are the lowest hanging fruit.</div>
+      </div>
+      <div class="card">
+        <div class="pillar-num">03</div>
+        <div class="pillar-title">The Educated Consumer</div>
+        <div class="pillar-desc">Consumption today is a profession. Consumers demand ingredient transparency — exact percentages replace vague claims. Minimalist sold to Unilever for ₹2,955Cr by winning label-reading consumers.</div>
+      </div>
+      <div class="card">
+        <div class="pillar-num">04</div>
+        <div class="pillar-title">India Over Global Templates</div>
+        <div class="pillar-desc">Tier-2/3 consumers trust WhatsApp resellers over Amazon — Meesho has 175Mn users, 87% non-metro. Gen-Z rejects inherited consumption. Winning brands will be distinctly, deeply Indian.</div>
+      </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
+  <!-- Exit Landscape -->
   <section class="section-sm" style="background:var(--bg2);">
     <div class="section-header">
       <div class="section-tag">Exit Landscape</div>
@@ -669,17 +1284,23 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
     <div class="exit-cols">
       <div class="exit-col">
         <div class="exit-col-tag">Strategic Acquisitions</div>
-<div class="exit-row"><span>Minimalist → Unilever</span><span class="exit-multiple">10×</span></div><div class="exit-row"><span>Yoga Bar → Marico</span><span class="exit-multiple">8.2×</span></div><div class="exit-row"><span>Beardo → ITC</span><span class="exit-multiple">7.1×</span></div><div class="exit-row"><span>Plix → Marico</span><span class="exit-multiple">5–8×</span></div>
+        <div class="exit-row"><span>Minimalist → Unilever</span><span class="exit-multiple">10×</span></div>
+        <div class="exit-row"><span>Yoga Bar → Marico</span><span class="exit-multiple">8.2×</span></div>
+        <div class="exit-row"><span>Beardo → ITC</span><span class="exit-multiple">7.1×</span></div>
+        <div class="exit-row"><span>Plix → Marico</span><span class="exit-multiple">5–8×</span></div>
       </div>
       <div class="exit-col">
         <div class="exit-col-tag">IPO Oversubscription</div>
-<div class="exit-row"><span>Wakefit IPO</span><span class="exit-multiple">2.5×</span></div><div class="exit-row"><span>Honasa IPO</span><span class="exit-multiple">7.6×</span></div><div class="exit-row"><span>Lenskart IPO</span><span class="exit-multiple">28×</span></div>
+        <div class="exit-row"><span>Wakefit IPO</span><span class="exit-multiple">2.5×</span></div>
+        <div class="exit-row"><span>Honasa IPO</span><span class="exit-multiple">7.6×</span></div>
+        <div class="exit-row"><span>Lenskart IPO</span><span class="exit-multiple">28×</span></div>
       </div>
     </div>
   </section>
 
   <div class="divider"></div>
 
+  <!-- Section 3: Investment Thesis -->
   <section class="section">
     <div class="two-col">
       <div>
@@ -719,13 +1340,134 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
 
 </div>
 
+<!-- ═══ SERVICE PARTNERS ════════════════════════════════════════════ -->
+<div class="page" id="page-partners">
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">Our Network</div>
+      <h2 class="section-title">Service <em>Partners</em></h2>
+      <p style="font-size:14px;color:var(--muted);margin-top:16px;max-width:640px;line-height:1.75;">We work with best-in-class partners across legal, compliance, audit, and operations to ensure institutional-grade governance for our fund and portfolio companies.</p>
+    </div>
+    <div class="card-grid" id="partners-grid">
+      <div class="card">
+        <div style="width:120px;height:60px;border:1.5px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(0,191,179,0.02);overflow:hidden;"><span style="font-size:10px;color:var(--muted);">Logo</span></div>
+        <div class="card-title">Legal Counsel</div>
+        <div class="card-desc">Partner name and firm — placeholder for CMS</div>
+      </div>
+      <div class="card">
+        <div style="width:120px;height:60px;border:1.5px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(0,191,179,0.02);overflow:hidden;"><span style="font-size:10px;color:var(--muted);">Logo</span></div>
+        <div class="card-title">Fund Administrator</div>
+        <div class="card-desc">Partner name and firm — placeholder for CMS</div>
+      </div>
+      <div class="card">
+        <div style="width:120px;height:60px;border:1.5px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(0,191,179,0.02);overflow:hidden;"><span style="font-size:10px;color:var(--muted);">Logo</span></div>
+        <div class="card-title">Auditor</div>
+        <div class="card-desc">Partner name and firm — placeholder for CMS</div>
+      </div>
+      <div class="card">
+        <div style="width:120px;height:60px;border:1.5px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(0,191,179,0.02);overflow:hidden;"><span style="font-size:10px;color:var(--muted);">Logo</span></div>
+        <div class="card-title">Compliance Officer</div>
+        <div class="card-desc">Partner name and firm — placeholder for CMS</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══ MEDIA ════════════════════════════════════════════ -->
+<div class="page" id="page-media">
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">Press & Coverage</div>
+      <h2 class="section-title">In the <em>Media</em></h2>
+      <p style="font-size:14px;color:var(--muted);margin-top:16px;max-width:640px;line-height:1.75;">Think9 Founders Fund in the press — coverage, features, and industry mentions.</p>
+    </div>
+    <div class="card-grid" id="media-grid">
+      <a class="card" href="#" target="_blank" style="text-decoration:none;color:inherit;cursor:pointer;">
+        <div style="width:120px;height:48px;border:1.5px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;background:rgba(0,191,179,0.02);overflow:hidden;"><span style="font-size:10px;color:var(--muted);">Publication Logo</span></div>
+        <div class="card-title">Article Headline Placeholder</div>
+        <div class="card-desc">Brief description of the media mention or press coverage. Date and publication name.</div>
+        <div style="margin-top:12px;font-size:10px;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;">Read Article →</div>
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- ═══ MUSINGS (BLOG) ════════════════════════════════════════════ -->
+<div class="page" id="page-musings">
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">Thoughts & Insights</div>
+      <h2 class="section-title">Our <em>Musings</em></h2>
+      <p style="font-size:14px;color:var(--muted);margin-top:16px;max-width:640px;line-height:1.75;">Perspectives on consumer brands, the Indian market, and building businesses that endure.</p>
+    </div>
+    <div class="blog-grid" id="blog-grid">
+      <div class="blog-card" onclick="showBlogPost('sample')">
+        <div class="blog-thumb"><span>Cover Image</span></div>
+        <div class="blog-body">
+          <div class="blog-date">Apr 2026</div>
+          <div class="blog-title">The Future of India's Consumer Brands</div>
+          <div class="blog-excerpt">A deep dive into why India's $730Bn branded consumption opportunity is unlike anything the world has seen before...</div>
+          <div class="blog-read">Read More →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- Single Blog Post View (hidden by default) -->
+<div class="page" id="page-blogpost">
+  <section class="section">
+    <div class="blog-post" id="blog-post-content">
+      <a onclick="showPage('musings')" style="font-size:12px;color:var(--teal);cursor:pointer;text-decoration:none;letter-spacing:0.06em;text-transform:uppercase;display:inline-block;margin-bottom:24px;">← Back to Musings</a>
+      <h1 id="bp-title">Blog Post Title</h1>
+      <div class="post-meta" id="bp-meta">Published Apr 2026</div>
+      <div class="post-content" id="bp-content">
+        <p>Blog post content loads here from CMS data...</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══ INVESTOR RELATIONS ════════════════════════════════════════════ -->
+<div class="page" id="page-investor">
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">Investor Relations</div>
+      <h2 class="section-title">Investor <em>Portal</em></h2>
+      <p style="font-size:14px;color:var(--muted);margin-top:12px;max-width:640px;line-height:1.75;">For existing investors and limited partners. Access the investor portal via Navigate for fund documents, reports, and portfolio updates.</p>
+    </div>
+
+    <div style="max-width:560px;">
+      <div style="text-align:center;padding:40px 32px;border:1px solid var(--border);background:var(--bg2);margin-bottom:28px;">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.5" style="margin:0 auto 14px;display:block;"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:22px;margin-bottom:8px;">Investor Login</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:20px;">Access fund documents, NAV updates, quarterly reports, and portfolio performance through our secure investor portal on Navigate.</p>
+        <a href="#" id="investor-login-link" class="btn-primary" style="display:inline-block;text-decoration:none;padding:14px 36px;font-size:13px;">Login via Navigate →</a>
+      </div>
+
+      <div style="padding:24px;border:1px solid var(--border);background:var(--bg2);">
+        <div style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal);font-family:'DM Mono',monospace;margin-bottom:12px;">Investor Grievance & Contact</div>
+        <p style="font-size:13px;color:var(--muted);line-height:1.8;margin-bottom:12px;">For any investor grievances, queries regarding your investment, or requests for fund-related information, please reach out to us directly.</p>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <a href="mailto:partner@think9.vc" style="font-size:13px;color:var(--teal);text-decoration:none;">partner@think9.vc</a>
+          <a href="mailto:vivek@think9.vc" style="font-size:13px;color:var(--teal);text-decoration:none;">vivek@think9.vc</a>
+          <a href="tel:+919820677903" style="font-size:13px;color:var(--muted);text-decoration:none;">+91 98206 77903</a>
+          <a href="tel:+919930090304" style="font-size:13px;color:var(--muted);text-decoration:none;">+91 99300 90304</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
 <footer>
   <div class="footer-brand">
     <div style="display:flex;align-items:center;gap:8px;">
-      <svg width="24" height="24" viewBox="0 0 40 40" fill="none"><path d="M20 4L36 28L20 22L4 28Z" fill="none" stroke="#00bfb3" stroke-width="1.5"/><path d="M20 14L28 28L20 24L12 28Z" fill="#00bfb3" opacity="0.4"/></svg>
-      <span style="font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:600;">th<span style="color:#00bfb3">î</span>nk9</span>
+      <img src="Logo Assets/think9-founders-fund-BLACK.png" alt="Think9 Founders Fund" style="height:28px;width:auto;">
     </div>
-    <p>India's most operationally embedded consumer-brand fund. SEBI Registered Category 2 AIF. ₹200 Crore fund backing the next generation of iconic Indian brands.</p>
+    <p>India's most operationally embedded consumer-brand fund. SEBI Registered Category 2 AIF.</p>
     <div class="social-icons">
       <a href="https://www.instagram.com/think9co/" target="_blank" aria-label="Instagram">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
@@ -735,22 +1477,156 @@ footer{border-top:1px solid var(--border);padding:clamp(36px,6vw,64px) var(--px)
       </a>
     </div>
   </div>
-  <div class="footer-col"><h4>Navigate</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('whyus')">Why Us</a></li><li><a onclick="showPage('investments')">Investments</a></li><li><a onclick="showPage('team')">Team</a></li><li><a onclick="showPage('thesis')">Our Thesis</a></li></ul></div>
-  <div class="footer-col"><h4>Contact</h4><ul>
-    <li><a href="mailto:vivek@think9.vc">vivek@think9.vc</a></li>
-    <li><a href="mailto:partner@think9.vc">partner@think9.vc</a></li>
-    <li><a href="tel:+919820677903">+91 98206 77903</a></li>
-    <li><a href="tel:+919930090304">+91 99300 90304</a></li>
-    <li><a href="https://www.think9co.in" target="_blank">www.think9co.in</a></li></ul></div>
+  <div class="footer-col">
+    <h4>Navigate</h4>
+    <ul id="footerNavContainer">
+      <li><a onclick="showPage('home')">Home</a></li>
+      <li><a onclick="showPage('whyus')">Why Us</a></li>
+      <li><a onclick="showPage('investments')">Investments</a></li>
+      <li><a onclick="showPage('team')">Team</a></li>
+      <li><a onclick="showPage('thesis')">Our Thesis</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <ul>
+      <li><a href="mailto:vivek@think9.vc">vivek@think9.vc</a></li>
+      <li><a href="mailto:partner@think9.vc">partner@think9.vc</a></li>
+      <li><a href="tel:+919820677903">+91 98206 77903</a></li>
+      <li><a href="tel:+919930090304">+91 99300 90304</a></li>
+      <li><a href="https://www.think9co.in" target="_blank">think9co.in ↗</a></li>
+    </ul>
+  </div>
 </footer>
-<div class="footer-bottom"><p>© 2026 Think9 Founders Fund. All rights reserved.</p><p>SEBI Registered Category 2 AIF</p></div>
+<div class="footer-bottom">
+  <p>© 2026 Think9 Founders Fund. All rights reserved.</p>
+  <p>SEBI Registered Category 2 AIF</p>
+</div>
 
 <script>
-function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+id).classList.add('active');document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));const l=document.getElementById('nav-'+id);if(l)l.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});closeMenu();return false;}
-function scrollToSection(id){setTimeout(()=>{const el=document.getElementById(id);if(el){const navH=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));const top=el.getBoundingClientRect().top+window.pageYOffset-navH-20;window.scrollTo({top,behavior:'smooth'});}},100);}
-function toggleMenu(){const h=document.getElementById('ham'),m=document.getElementById('mobileMenu');h.classList.toggle('open');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';}
-function closeMenu(){document.getElementById('ham').classList.remove('open');document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow='';}
-window.addEventListener('resize',()=>{if(window.innerWidth>640)closeMenu();});
+  // Page visibility configuration
+  const pageConfig = {
+    home: { visible: true, label: 'Home' },
+    whyus: { visible: true, label: 'Why Us' },
+    investments: { visible: true, label: 'Investments' },
+    team: { visible: true, label: 'Team' },
+    thesis: { visible: true, label: 'Our Thesis' },
+    partners: { visible: true, label: 'Service Partners' },
+    media: { visible: true, label: 'Media' },
+    musings: { visible: true, label: 'Musings' },
+    investor: { visible: true, label: 'Investor Relations' }
+  };
+
+  // Blog data store (populated by CMS export)
+  const blogPosts = [];
+
+  function buildNav() {
+    // Nav links container
+    const navContainer = document.getElementById('navLinksContainer');
+    if (navContainer) {
+      const baseNav = [
+        'home', 'whyus', 'investments', 'team', 'thesis', 'partners', 'media', 'musings'
+      ];
+      const visiblePages = baseNav.filter(p => pageConfig[p] && pageConfig[p].visible);
+
+      // Rebuild nav (keep Why Us dropdown structure)
+      let navHTML = '';
+      visiblePages.forEach(p => {
+        if (p === 'whyus') {
+          navHTML += `<li class="nav-dropdown">
+            <a onclick="showPage('whyus')" id="nav-${p}">${pageConfig[p].label}</a>
+            <div class="dropdown-menu">
+              <a onclick="showPage('whyus');scrollToSection('wu-approach')">Our Differentiated Approach</a>
+              <a onclick="showPage('whyus');scrollToSection('wu-consumer')">Consumer Understanding</a>
+              <a onclick="showPage('whyus');scrollToSection('wu-ecosystem')">Our Ecosystem</a>
+              <a onclick="showPage('whyus');scrollToSection('wu-backers')">Our Early Backers</a>
+            </div>
+          </li>`;
+        } else {
+          navHTML += `<li><a onclick="showPage('${p}')" id="nav-${p}">${pageConfig[p].label}</a></li>`;
+        }
+      });
+      navHTML += `<li><a href="mailto:partner@think9.vc" class="nav-cta">Get in Touch</a></li>`;
+      navHTML += `<li><a onclick="showPage('investor')" class="nav-cta" style="margin-left:4px;background:transparent;border-color:var(--muted);color:var(--muted) !important;">Investor Login</a></li>`;
+      navContainer.innerHTML = navHTML;
+    }
+
+    // Footer nav container
+    const footerNav = document.getElementById('footerNavContainer');
+    if (footerNav) {
+      const basePages = ['home', 'whyus', 'investments', 'team', 'thesis', 'partners', 'media', 'musings'];
+      const visiblePages = basePages.filter(p => pageConfig[p] && pageConfig[p].visible);
+      let footerHTML = visiblePages.map(p =>
+        `<li><a onclick="showPage('${p}')">${pageConfig[p].label}</a></li>`
+      ).join('');
+      footerNav.innerHTML = footerHTML;
+    }
+  }
+
+  function showBlogPost(slug) {
+    const post = blogPosts.find(p => p.slug === slug);
+    if (!post) return;
+    document.getElementById('bp-title').textContent = post.title;
+    document.getElementById('bp-meta').textContent = 'Published ' + post.date;
+    document.getElementById('bp-content').innerHTML = post.content;
+    showPage('blogpost');
+  }
+
+  function renderBlogs() {
+    const grid = document.getElementById('blog-grid');
+    if (!blogPosts.length) return;
+    grid.innerHTML = blogPosts.map(p => `
+      <div class="blog-card" onclick="showBlogPost('${p.slug}')">
+        <div class="blog-thumb">${p.thumbnail ? '<img src="'+p.thumbnail+'" alt="'+p.title+'">' : '<span>Cover Image</span>'}</div>
+        <div class="blog-body">
+          <div class="blog-date">${p.date}</div>
+          <div class="blog-title">${p.title}</div>
+          <div class="blog-excerpt">${p.excerpt}</div>
+          <div class="blog-read">Read More →</div>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+    const link = document.getElementById('nav-' + id);
+    if (link) link.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    closeMenu();
+    return false;
+  }
+  function scrollToSection(id) {
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (el) {
+        const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-h'));
+        const top = el.getBoundingClientRect().top + window.pageYOffset - navH - 20;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    }, 100);
+  }
+  function toggleMenu() {
+    const ham  = document.getElementById('ham');
+    const menu = document.getElementById('mobileMenu');
+    ham.classList.toggle('open');
+    menu.classList.toggle('open');
+    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+  }
+  function closeMenu() {
+    document.getElementById('ham').classList.remove('open');
+    document.getElementById('mobileMenu').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  window.addEventListener('resize', () => { if (window.innerWidth > 640) closeMenu(); });
+
+  // Initialize on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    buildNav();
+    renderBlogs();
+  });
 </script>
 </body>
 </html>
